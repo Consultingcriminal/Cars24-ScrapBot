@@ -1,8 +1,7 @@
-import pandas as pd
 from scrapper import scrape
 from clean_data import clean
-import multiprocessing
-from multiprocessing.dummy import Pool
+from datetime import datetime
+import concurrent.futures
 
 def get_queries():
     num_que = int(input("Enter the number of queries : "))
@@ -25,7 +24,9 @@ def get_queries():
 
 if __name__ == '__main__':
     url = get_queries()
-    with multiprocessing.Pool(processes=3) as pool:
-        pool.map(scrape,url)
+    threads  = min(30,len(url))
+    
+    with concurrent.futures.ThreadPoolExecutor(max_workers = threads) as executor:
+        executor.map(scrape,url)   
     clean()
     print('Scrapping Completed')  
