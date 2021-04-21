@@ -22,7 +22,7 @@
     <img src="images/images.png" alt="Logo" width="580" height="240">
   </a>
 
-  <h3 align="center">Cars24 ScrapBot Using Multi-Processing</h3>
+  <h3 align="center">Cars24 ScrapBot Using Multi-Threading</h3>
 
   <p align="center">
     Scrap Used Car Information efficiently
@@ -38,7 +38,7 @@
 Efficiently Scrap data from Cars24 Website.
 
 Highlights:
-* The engine uses multi-processing for reducing scraping time.
+* The engine uses multi-threading for reducing scraping time.
 * Scrap multiple queries simulataneously.
 * Data Dump and Cleaned Data Format are provided simulataneously.
 
@@ -47,7 +47,7 @@ Highlights:
 
 Automating Framework
 * [Selenium](https://www.selenium.dev/)
-* [Multiprocessing](https://docs.python.org/3/library/multiprocessing.html)
+* [Multithreading](https://docs.python.org/3/library/multiprocessing.html)
 
 <!-- USAGE EXAMPLES -->
 ## Usage
