@@ -39,8 +39,9 @@ Efficiently Scrap data from Cars24 Website.
 
 Highlights:
 * The engine uses multi-threading for reducing scraping time.
-* Scrap multiple queries simulataneously.
+* Scrape multiple queries simulataneously.
 * Data Dump and Cleaned Data Format are provided simulataneously.
+* Scrape upto 30 queries simultaneously.
 
 
 ### Built With
